@@ -5,21 +5,44 @@
 }
 
 header{
-    height: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 main{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
+    display: flex;
 }
 
 #sidebar{
     width: 150px;
     height: 100%;
-    background-color: blue;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #061E34;
 }
 
 #dashboard{
     width: calc(100vw - 150px);
     height: 100%;
-    background-color: red;
+}
+
+#directory{
+    background-color: #1C71E8;
+    padding: 20px;
+    display: flex;
+}
+
+#directory a{
+    color: white;
+    text-decoration: none;
+}
+
+.badge{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#offcanvas{
+    width: 50%;
 }
